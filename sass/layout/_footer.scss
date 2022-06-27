@@ -1,0 +1,164 @@
+.down {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.bottom-left-side {
+    margin-right: 70px;
+}
+
+.logo-white {
+    color: var(--top-color);
+}
+
+/* адрес в подвале страницы */
+.address {
+    margin-top: 20px;
+}
+
+.address-list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.address-list-address-link {
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--top-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* цвет почты и номера телефона в подвале */
+.address-list-mail,
+.address-list-phone {
+    font-size: 14px;
+    line-height: 1.7;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--address-list-mail-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* фоновый цвет подвала */
+.bottom {
+    background: var(--hero-bottom-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address-list-address-link:hover,
+.address-list-address-link:focus {
+    color: var(--accent-color);
+}
+
+.address-list-mail:hover,
+.address-list-mail:focus {
+    color: var(--accent-color);
+}
+
+.address-list-phone:hover,
+.address-list-phone:focus {
+    color: var(--accent-color);
+}
+
+/* раздел с иконками соцсетей */
+.social-icons-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+.social-icons-list-bottom {
+    display: flex;
+}
+
+.bottom-social-icon-title {
+    display: flex;
+    color: var(--top-color);
+    margin-bottom: 20px;
+}
+
+.social-icons-bottom {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.social-icons-bottom:last-child {
+    margin-right: 0px;
+}
+
+.social-icons-link-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--social-icon-bg-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-med-icon-bottom {
+    fill: var(--top-color);
+}
+
+.social-icons-link-bottom:hover,
+.social-icons-link-bottom:focus {
+    background-color: var(--accent-color);
+}
+
+.bottom-right-side {
+    display: flex;
+    margin-right: auto;
+}
+
+/*-- секция подписки --*/
+.subscription-section {
+    padding-left: auto;
+}
+
+.subscription-section-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.subscription-section-title {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.email-wrapper {
+    display: flex;
+}
+
+.subscription-section-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 10px;
+    padding: 15px;
+    color: #FFFFFF;
+    background-color: var(--hero-bottom-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscription-section-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: transparent;
+}

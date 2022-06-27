@@ -1,0 +1,35 @@
+.our-occupation {
+    padding-top: 0px;
+}
+.our-occupation-list,
+.our-team-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.our-occupation-item:not(:last-child) {
+    margin-right: 30px;
+}
+.thumb {
+    position: relative;
+}
+.thumb>.label {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border-bottom-left-radius: 4px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    background-color: var(--label-bg-color);
+    color: var(--top-color);
+}
