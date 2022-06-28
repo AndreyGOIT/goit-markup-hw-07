@@ -3,10 +3,12 @@
 }
 .our-advantages-item {
     align-items: flex-start;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
 }
-.our-advantages-item:not(:last-child) {
-    margin-right: 30px;
-}
+
 .our-advantages-title,
 .bottom-social-icon-title {
     font-weight: 700;
@@ -15,12 +17,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.our-advantages-title{
-    margin-bottom: 10px;
-}
 .our-advantages-title {
+    margin-bottom: 10px;
     color: var(--text-color);
 }
+
 .our-advantages-text {
     width: 270px;
     font-size: 14px;
