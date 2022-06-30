@@ -1,4 +1,4 @@
-.top {
+.page-header {
     background: var(--top-color);
     /* Установит стили нинжней рамки */
     border-bottom-width: 1px;
@@ -8,21 +8,21 @@
 
 .up,
 .navigation,
-.navigation-list,
+.navigation__list,
 .navigation-contacts,
-.navigation-contacts-item,
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation-contacts__item,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.navigation-list {
+.navigation__list {
     margin-left: 90px;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__list-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -30,7 +30,7 @@
     margin-left: auto;
 }
 
-.navigation-contacts-item:not(:last-child) {
+.navigation-contacts__item:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -38,7 +38,7 @@
     color: var(--text-logo-black);
 }
 
-.navigation-list-item {
+.navigation__list-item {
     position: relative;
     padding-top: 32px;
     height: 80px;
@@ -58,9 +58,9 @@
     background-color: var(--accent-color);
 }
 
-.navigation-list-link,
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation__list-link,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -74,8 +74,8 @@
 
 /* электронка и телефон фирмы в шапке */
 
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation-contacts__mail,
+.navigation-contacts__phone {
     height: 16px;
     color: var(--navigation-contacts-color);
 }
@@ -93,27 +93,27 @@
 }
 
 /* При ховере меняем значения анимируемых свойств */
-.navigation-list-link:hover,
-.navigation-list-link:focus {
+.navigation__list-link:hover,
+.navigation__list-link:focus {
     color: var(--accent-color);
 }
 
-.navigation-contacts-mail:focus .envelope-icon,
-.navigation-contacts-mail:hover .envelope-icon {
+.navigation-contacts__mail:focus .envelope-icon,
+.navigation-contacts__mail:hover .envelope-icon {
     fill: var(--accent-color);
 }
 
-.navigation-contacts-mail:focus,
-.navigation-contacts-mail:hover {
+.navigation-contacts__mail:focus,
+.navigation-contacts__mail:hover {
     color: var(--accent-color);
 }
 
-.navigation-contacts-phone:hover .mobile-icon,
-.navigation-contacts-phone:focus .mobile-icon {
+.navigation-contacts__phone:hover .mobile-icon,
+.navigation-contacts__phone:focus .mobile-icon {
     fill: var(--accent-color);
 }
 
-.navigation-contacts-phone:hover,
-.navigation-contacts-phone:focus {
+.navigation-contacts__phone:hover,
+.navigation-contacts__phone:focus {
     color: var(--accent-color);
 }

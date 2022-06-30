@@ -34,7 +34,7 @@
   overflow: hidden;
 }
 
-.navigation-list,
+.navigation__list,
 .navigation-contacts,
 .filter-list,
 .examples-list,
@@ -47,9 +47,9 @@
 }
 
 .logo-link-nav,
-.navigation-list-link,
-.navigation-contacts-mail,
-.navigation-contacts-phone,
+.navigation__list-link,
+.navigation-contacts__mail,
+.navigation-contacts__phone,
 .logo-link-bottom,
 .address-list-address-link,
 .address-list-mail,
@@ -216,7 +216,7 @@ body {
   background-color: #FFFFFF;
 }
 
-.modal-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -232,12 +232,12 @@ body {
   cursor: pointer;
 }
 
-.modal-close-btn-icon {
+.modal__close-btn-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
+.modal__close-btn:hover .modal__close-btn-icon,
+.modal__close-btn:focus .modal__close-btn-icon {
   fill: var(--accent-color);
 }
 
@@ -246,7 +246,7 @@ body {
   flex-direction: column;
 }
 
-.contact-form-title {
+.contact-form__title {
   display: block;
   margin-bottom: 12px;
   font-weight: 700;
@@ -258,14 +258,14 @@ body {
   color: #212121;
 }
 
-.contact-form-field {
+.contact-form__field {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 10px;
 }
 
-.contact-form-field-title {
+.contact-form__field-title {
   display: block;
   margin-bottom: 4px;
   font-weight: 400;
@@ -276,7 +276,7 @@ body {
   color: #757575;
 }
 
-.contact-form-input {
+.contact-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -285,16 +285,16 @@ body {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:focus {
+.contact-form__input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.contact-form-input-wrapper {
+.contact-form__input-wrapper {
   position: relative;
 }
 
-.contact-form-icon {
+.contact-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -305,7 +305,7 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:focus + .contact-form-icon {
+.contact-form__input:focus + .contact-form__icon {
   fill: var(--accent-color);
 }
 
@@ -333,7 +333,7 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.agreement-line {
+.modal__checkbox-agreement-line {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -344,16 +344,16 @@ body {
   border-radius: 2px;
 }
 
-.checkbox-input:checked + .agreement-line {
+.modal__checkbox-input:checked + .modal__checkbox-agreement-line {
   background-position: center;
   background-color: var(--accent-color);
 }
 
-.checkbox-input:checked + .agreement-line {
+.modal__checkbox-input:checked + .modal__checkbox-agreement-line {
   border: none;
 }
 
-.icon {
+.modal__checkbox-icon {
   width: 1em;
   height: 1em;
   stroke-width: 0;
@@ -370,13 +370,13 @@ body {
   margin-bottom: 30px;
 }
 
-.checkbox-input {
+.modal__checkbox-input {
   position: absolute;
   width: 16px;
   height: 15px;
 }
 
-.checkbox-label {
+.modal__checkbox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,7 +391,7 @@ body {
   color: #757575;
 }
 
-.submit-btn {
+.modal__submit-btn {
   min-width: 200px;
   align-self: center;
   height: 50px;
@@ -425,7 +425,7 @@ body {
   color: var(--text-color);
 }
 
-.top {
+.page-header {
   background: var(--top-color);
   /* Установит стили нинжней рамки */
   border-bottom-width: 1px;
@@ -435,21 +435,21 @@ body {
 
 .up,
 .navigation,
-.navigation-list,
+.navigation__list,
 .navigation-contacts,
-.navigation-contacts-item,
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation-contacts__item,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.navigation-list {
+.navigation__list {
   margin-left: 90px;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__list-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -457,7 +457,7 @@ body {
   margin-left: auto;
 }
 
-.navigation-contacts-item:not(:last-child) {
+.navigation-contacts__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -465,7 +465,7 @@ body {
   color: var(--text-logo-black);
 }
 
-.navigation-list-item {
+.navigation__list-item {
   position: relative;
   padding-top: 32px;
   height: 80px;
@@ -485,9 +485,9 @@ body {
   background-color: var(--accent-color);
 }
 
-.navigation-list-link,
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation__list-link,
+.navigation-contacts__mail,
+.navigation-contacts__phone {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -500,8 +500,8 @@ body {
 }
 
 /* электронка и телефон фирмы в шапке */
-.navigation-contacts-mail,
-.navigation-contacts-phone {
+.navigation-contacts__mail,
+.navigation-contacts__phone {
   height: 16px;
   color: var(--navigation-contacts-color);
 }
@@ -519,28 +519,28 @@ body {
 }
 
 /* При ховере меняем значения анимируемых свойств */
-.navigation-list-link:hover,
-.navigation-list-link:focus {
+.navigation__list-link:hover,
+.navigation__list-link:focus {
   color: var(--accent-color);
 }
 
-.navigation-contacts-mail:focus .envelope-icon,
-.navigation-contacts-mail:hover .envelope-icon {
+.navigation-contacts__mail:focus .envelope-icon,
+.navigation-contacts__mail:hover .envelope-icon {
   fill: var(--accent-color);
 }
 
-.navigation-contacts-mail:focus,
-.navigation-contacts-mail:hover {
+.navigation-contacts__mail:focus,
+.navigation-contacts__mail:hover {
   color: var(--accent-color);
 }
 
-.navigation-contacts-phone:hover .mobile-icon,
-.navigation-contacts-phone:focus .mobile-icon {
+.navigation-contacts__phone:hover .mobile-icon,
+.navigation-contacts__phone:focus .mobile-icon {
   fill: var(--accent-color);
 }
 
-.navigation-contacts-phone:hover,
-.navigation-contacts-phone:focus {
+.navigation-contacts__phone:hover,
+.navigation-contacts__phone:focus {
   color: var(--accent-color);
 }
 
@@ -768,19 +768,19 @@ body {
   color: var(--top-color);
 }
 
-.our-advantages-list {
+.our-advantages__list {
   display: flex;
 }
 
-.our-advantages-item {
+.our-advantages__item {
   align-items: flex-start;
 }
 
-.our-advantages-item:not(:last-child) {
+.our-advantages__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.our-advantages-title,
+.our-advantages__title,
 .bottom-social-icon-title {
   font-weight: 700;
   font-size: 14px;
@@ -789,12 +789,12 @@ body {
   text-transform: uppercase;
 }
 
-.our-advantages-title {
+.our-advantages__title {
   margin-bottom: 10px;
   color: var(--text-color);
 }
 
-.our-advantages-text {
+.our-advantages__text {
   width: 270px;
   font-size: 14px;
   line-height: 1.71;
@@ -803,7 +803,7 @@ body {
   color: var(--navigation-contacts-color);
 }
 
-.our-advantages-item-area {
+.our-advantages__item-area {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;

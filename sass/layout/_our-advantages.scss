@@ -1,7 +1,7 @@
-.our-advantages-list {
+.our-advantages__list {
     display: flex;
 }
-.our-advantages-item {
+.our-advantages__item {
     align-items: flex-start;
 
     &:not(:last-child) {
@@ -9,7 +9,7 @@
     }
 }
 
-.our-advantages-title,
+.our-advantages__title,
 .bottom-social-icon-title {
     font-weight: 700;
     font-size: 14px;
@@ -17,12 +17,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.our-advantages-title {
+.our-advantages__title {
     margin-bottom: 10px;
     color: var(--text-color);
 }
 
-.our-advantages-text {
+.our-advantages__text {
     width: 270px;
     font-size: 14px;
     line-height: 1.71;
@@ -30,7 +30,7 @@
     letter-spacing: 0.03em;
     color: var(--navigation-contacts-color);
 }
-.our-advantages-item-area {
+.our-advantages__item-area {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
