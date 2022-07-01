@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 }
 
-.examples-list-title {
+.examples-list__title {
     margin-bottom: 5px;
     font-weight: 700;
     font-size: 18px;
@@ -13,7 +13,7 @@
     color: var(--text-color);
 }
 
-.examples-list-type {
+.examples-list__type {
     font-size: 16px;
     line-height: 1.88;
     /* identical to box height, or 188% */
@@ -21,7 +21,7 @@
     color: var(--navigation-contacts-color);
 }
 
-.examples-list-item {
+.examples-list__item {
     display: flex;
     background: var(--top-color);
 
@@ -58,13 +58,13 @@
     color: var(--top-color);
     overflow: auto;
 
-    .examples-list-link:hover &,
-    .examples-list-link:focus & {
+    .examples-list__link:hover &,
+    .examples-list__link:focus & {
         transform: translateY(0);
     }
 }
 
-.examples-list-link {
+.examples-list__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,

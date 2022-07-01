@@ -5,7 +5,7 @@
     margin-bottom: 50px;
 }
 
-.filter-button {
+.filter-list__item {
     border: transparent;
 
     &:not(:last-child) {
@@ -13,7 +13,7 @@
     }
 }
 
-.filter-btn-text {
+.filter-list__btn {
     border: transparent;
     min-width: 75px;
     font-weight: 500;
