@@ -4,13 +4,13 @@
     justify-content: center;
 }
 
-.social-icons {
+.social-icons-list__item {
     display: flex;
     width: 44px;
     height: 44px;
 }
 
-.social-icons-link {
+.social-icons-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +34,13 @@
     fill: var(--our-client-border-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    .social-icons-link:hover &,
-    .social-icons-link:focus & {
+    .social-icons-list__link:hover &,
+    .social-icons-list__link:focus & {
         fill: var(--top-color);
     }
 }
 
-.social-icons {
+.social-icons-list__item {
     margin-right: 10px;
 
     &:last-child {

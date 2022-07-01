@@ -1,19 +1,19 @@
 .our-occupation {
     padding-top: 0px;
 }
-.our-occupation-list,
-.our-team-list {
+.our-occupation__list,
+.our-team__list {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
-.our-occupation-item:not(:last-child) {
+.our-occupation__item:not(:last-child) {
     margin-right: 30px;
 }
-.thumb {
+.our-occupation__thumb {
     position: relative;
 }
-.thumb>.label {
+.our-occupation__thumb>.our-occupation__label {
     position: absolute;
     display: flex;
     justify-content: center;

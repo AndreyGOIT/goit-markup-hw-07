@@ -3,10 +3,10 @@
 .filter-list,
 .examples-list,
 .address-list,
-.our-advantages-list,
-.our-occupation-list,
-.our-team-list,
-.social-icons-list-bottom {
+.our-advantages__list,
+.our-occupation__list,
+.our-team__list,
+.soc-icons-section__list {
     list-style: none;
 }
 .logo-link-nav,
@@ -14,9 +14,9 @@
 .navigation-contacts__mail,
 .navigation-contacts__phone,
 .logo-link-bottom,
-.address-list-address-link,
-.address-list-mail,
-.address-list-phone,
+.address-list__address-link,
+.address-list__mail,
+.address-list__phone,
 .examples-list-link {
     text-decoration: none;
 }
